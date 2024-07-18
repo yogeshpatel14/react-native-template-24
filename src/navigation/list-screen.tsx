@@ -1,13 +1,18 @@
 import {FC} from 'react';
 import Login from '../screen/login';
 import Signup from '../screen/signup';
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {
+  NativeStackNavigationOptions,
+  NativeStackScreenProps,
+} from '@react-navigation/native-stack';
 import {interfaceRootStackList} from './root-stack-list.interface';
 import Dashboard from '../screen/dashboard';
+import Splash from '../screen/splash';
 
 export type interfaceListScreen = {
   name: string;
   component: FC<NativeStackScreenProps<interfaceRootStackList, any>>;
+  options?: NativeStackNavigationOptions;
 };
 
 const listOfScreen: interfaceListScreen[] = [
@@ -22,6 +27,13 @@ const listOfScreen: interfaceListScreen[] = [
   {
     name: 'Dashboard',
     component: Dashboard,
+  },
+  {
+    name: 'Splash',
+    component: Splash,
+    options: {
+      headerShown: false,
+    },
   },
 ];
 

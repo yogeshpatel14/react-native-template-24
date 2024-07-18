@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator<interfaceRootStackList>();
 function RootNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
+      <Stack.Navigator initialRouteName="Splash">
         {listOfScreen.map((item: interfaceListScreen, index: number) => (
           <Stack.Screen key={index} {...item} />
         ))}
