@@ -7,10 +7,13 @@
 
     /* Completeness */
     "skipLibCheck": true,
+    // "baseUrl": ".",         
     // "paths": {
-    //   "@src/components/*":["src/components/*"],
-    //   "@src/screen/*":["src/screen/*"]
+    //   "@src/components/*":["./src/components/*"],
+    //   "@src/screen/*":["./src/screen/*"]
     // },
-    // "baseUrl": "./"                          /* Skip type checking all .d.ts files. */
-  }
+    /* Skip type checking all .d.ts files. */
+  },
+   "include": ["src"],
+    // "exclude":["node_modules"]
 }

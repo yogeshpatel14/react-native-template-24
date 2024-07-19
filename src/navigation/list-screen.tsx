@@ -19,6 +19,9 @@ const listOfScreen: interfaceListScreen[] = [
   {
     name: 'Login',
     component: Login,
+    options: {
+      headerShown: false,
+    },
   },
   {
     name: 'Signup',
